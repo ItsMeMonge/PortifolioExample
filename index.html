@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monge - Cybersecurity Engineer & Ethical Hacker specializing in OSINT and security architecture">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your Name</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <a href="/" class="logo">Your Name</a>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="navbar">
+            <a href="/" class="active">Home</a>
+            <a href="/skills">Skills</a>
+            <a href="/projects">Projects</a>
+            <a href="#">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="intro-text">
+                    <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                    <h2 class="typing-text">I'm a <span class="auto-text"></span></h2>
+                    
+                    <div class="description">
+                        <p>As a dedicated Cybersecurity Engineer and Ethical Hacker located in Brazil, I specialize in vulnerability assessments, penetration testing, and threat detection. My expertise in OSINT investigations and security architecture enables me to design and fortify robust digital systems, ensuring their resilience against evolving threats.</p>
+                    </div>
+
+                    <div class="expertise-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security Expert</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-search"></i>
+                            <span>OSINT Specialist</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="/contact" class="cta-button primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get in Touch
+                        </a>
+                        <a href="/projects" class="cta-button secondary">
+                            <i class="fas fa-code-branch"></i>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-wrapper">
+                    <img src="https://images.vexels.com/media/users/3/153780/isolated/preview/2c87fa64e65a354a1c298dc1d141cacc-magicians-top-hat-icon.png" alt="Monge's profile picture">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="expertise-tags">
+                    <span class="tag">
+                        <i class="fas fa-user-shield"></i>
+                        Ethical Hacking
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-magnifying-glass"></i>
+                        OSINT
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-lock"></i>
+                        Security
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+        console.log('CallBack - Particles.Js Config is loaded!');
+      });
+    </script>
+    <script>
+        // Typing Animation
+        const typed = new Typed(".auto-text", {
+            strings: [
+                "Ethical Hacker", 
+                "OSINT Investigator",
+                // Adicione mais se necessario
+            ],
+            typeSpeed: 100,
+            backSpeed: 150,
+            loop: true
+        });
+
+        // Enhanced Menu Functionality
+        const menuBtn = document.querySelector('.menu-btn');
+        const navbar = document.querySelector('.navbar');
+        const body = document.body;
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            body.style.overflow = navbar.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navbar.classList.contains('active') && 
+                !navbar.contains(e.target) && 
+                !menuBtn.contains(e.target)) {
+                navbar.classList.remove('active');
+                menuBtn.classList.remove('active');
+                body.style.overflow = 'auto';
+            }
+        });
+
+        // Close menu when clicking links
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+                menuBtn.classList.remove('active');
+                body.style.overflow = 'auto';
+            });
+        });
+
+        // Scroll Animation
+        document.querySelector('.scroll-indicator').addEventListener('click', () => {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add animation class to elements when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.home-content > *, .home-img, .expertise-badges, .social-links, .action-buttons')
+            .forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+    

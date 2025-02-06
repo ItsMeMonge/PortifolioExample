@@ -1132,109 +1132,109 @@ button i {
     padding: 2.5rem;
 }
 
-        .project-content h3 {
-            font-size: 2.6rem;
-            margin-bottom: 1.5rem;
-            color: var(--text);
-            font-weight: 700;
-        }
+.project-content h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    font-weight: 700;
+}
 
-        .project-content p {
-            font-size: 1.6rem;
-            line-height: 1.8;
-            margin-bottom: 2.5rem;
-            color: var(--text-light);
-            opacity: 0.9;
-        }
+.project-content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    color: var(--text-light);
+    opacity: 0.9;
+}
 
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 2.5rem;
-        }
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
 
-        .project-tag {
-            font-size: 1.3rem;
-            color: var(--text-light);
-            padding: 0.8rem 1.5rem;
-            background: rgba(202, 35, 35, 0.1);
-            border-radius: 10px;
-            transition: var(--transition-smooth);
-            border: 1px solid rgba(202, 35, 35, 0.1);
-        }
+.project-tag {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    padding: 0.8rem 1.5rem;
+    background: rgba(202, 35, 35, 0.1);
+    border-radius: 10px;
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(202, 35, 35, 0.1);
+}
 
-        .project-tag:hover {
-            background: var(--text);
-            color: var(--bg-dark);
-            transform: translateY(-3px);
-        }
+.project-tag:hover {
+    background: var(--text);
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
 
-        .project-links {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
+.project-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
 
-        .project-links a {
-            color: var(--text);
-            font-size: 1.6rem;
-            transition: var(--transition-smooth);
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
+.project-links a {
+    color: var(--text);
+    font-size: 1.6rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
 
-        .project-links a:hover {
-            color: var(--text-light);
-            transform: translateY(-2px);
-        }
+.project-links a:hover {
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
 
-        .project-links a i {
-            font-size: 1.8rem;
-        }
+.project-links a i {
+    font-size: 1.8rem;
+}
 
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-            .projects-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+/* Responsive Design for Project */
+@media (max-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-        @media (max-width: 768px) {
-            .projects {
-                padding: 10rem 3% 3rem;
-            }
-
-            .projects-header h1 {
-                font-size: 4rem;
-            }
-
-            .projects-header p {
-                font-size: 1.8rem;
-                padding: 0 2rem;
-            }
-
-            .projects-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-        }
-
-    @media (max-width: 480px) {
-        .project-content h3 {
-            font-size: 2.2rem;
-        }
-        .project-content p {
-            font-size: 1.5rem;
-        }
-        .project-links {
-            flex-direction: column;
-            gap: 1.5rem;
-        }
+@media (max-width: 768px) {
+    .projects {
+        padding: 10rem 3% 3rem;
     }
 
+    .projects-header h1 {
+        font-size: 4rem;
+    }
 
+    .projects-header p {
+        font-size: 1.8rem;
+        padding: 0 2rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-content h3 {
+        font-size: 2.2rem;
+    }
+    .project-content p {
+        font-size: 1.5rem;
+    }
+    .project-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* Particle CSS */
 #particles-js {
     position: fixed;
     top: 0;
@@ -1244,6 +1244,3 @@ button i {
     z-index: 0; 
     background: transparent;
 }
-
-
-

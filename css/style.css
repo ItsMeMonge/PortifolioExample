@@ -1221,21 +1221,18 @@ button i {
             }
         }
 
-        @media (max-width: 480px) {
-            .project-content h3 {
-                font-size: 2.2rem;
-            }
-
-            .project-content p {
-                font-size: 1.5rem;
-            }
-
-            .project-links {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
+    @media (max-width: 480px) {
+        .project-content h3 {
+            font-size: 2.2rem;
         }
-
+        .project-content p {
+            font-size: 1.5rem;
+        }
+        .project-links {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
 
 
 #particles-js {

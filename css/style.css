@@ -537,6 +537,23 @@ header {
     color: var(--text-gray);
 }
 
+.info-card a {
+    font-size: 1.6rem;
+    color: var(--text-gray);
+    transition: background-position 275ms ease;
+    background: linear-gradient(to right, rgb(150, 150, 150), rgb(143, 143, 143) 50%, rgb(223, 10, 10) 50%);
+    background-position: 0 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
+
+.info-card a:hover {
+    font-size: 1.6rem;
+    background-position: 100%;
+}
+
 .contact-form {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
